@@ -35,3 +35,7 @@ return [
 ~~~
 ./yii demo/generate-data
 ~~~
+
+RUN
+---
+web app root path `app/web`
