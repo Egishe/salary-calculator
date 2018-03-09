@@ -1,0 +1,1072 @@
+2018-03-08 13:20:34 [-][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'console\commands\HelloController' in file: /var/www/egishe/web-consult/basic/console/commands/HelloController.php. Namespace missing? in /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('console\\command...')
+#1 [internal function]: spl_autoload_call('console\\command...')
+#2 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/HelpController.php(284): class_exists('console\\command...')
+#3 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/HelpController.php(262): yii\console\controllers\HelpController->validateControllerClass('console\\command...')
+#4 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/HelpController.php(179): yii\console\controllers\HelpController->getModuleCommands(Object(yii\console\Application))
+#5 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/HelpController.php(191): yii\console\controllers\HelpController->getCommands()
+#6 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/HelpController.php(297): yii\console\controllers\HelpController->getCommandDescriptions()
+#7 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/HelpController.php(67): yii\console\controllers\HelpController->getDefaultHelp()
+#8 [internal function]: yii\console\controllers\HelpController->actionIndex(NULL)
+#9 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#12 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#13 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('', Array)
+#14 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('', Array)
+#15 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /var/www/egishe/web-consult/basic/yii(20): yii\base\Application->run()
+#17 {main}
+2018-03-08 13:20:33 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LC_PAPER' => 'ru_RU.UTF-8'
+    'XDG_VTNR' => '8'
+    'LC_ADDRESS' => 'ru_RU.UTF-8'
+    'SSH_AGENT_PID' => '3618'
+    'XDG_SESSION_ID' => 'c1'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'LC_MONETARY' => 'ru_RU.UTF-8'
+    'QT_STYLE_OVERRIDE' => 'gtk'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '4205'
+    'XDG_SESSION_COOKIE' => '2a5d5f96ef9147c0b35535562b32d0ff-1520011373.792689-238922250'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'ru_RU.UTF-8'
+    'WINDOWID' => '81791394'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'USER' => 'egishe'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'QT_ACCESSIBILITY' => '1'
+    'LC_TELEPHONE' => 'ru_RU.UTF-8'
+    'INSIDE_NEMO_PYTHON' => ''
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SESSION_MANAGER' => 'local/egishe-GP62-2QE:@/tmp/.ICE-unix/3451,unix/egishe-GP62-2QE:/tmp/.ICE-unix/3451'
+    'DEFAULTS_PATH' => '/usr/share/gconf/cinnamon.default.path'
+    'USERNAME' => 'egishe'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'LC_IDENTIFICATION' => 'ru_RU.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/var/www/egishe/web-consult/basic'
+    'XMODIFIERS' => '@im=none'
+    'LANG' => 'ru_RU.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/cinnamon.mandatory.path'
+    'LC_MEASUREMENT' => 'ru_RU.UTF-8'
+    'PAPERSIZE' => 'a4'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'cinnamon'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/home/egishe'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'egishe'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'QT4_IM_MODULE' => 'xim'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-xeEd9eNSv0,guid=48223459e1fc4025ab6279025a99886e'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'MDMSESSION' => 'cinnamon'
+    'WINDOWPATH' => '8'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'ru_RU.UTF-8'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'GTK_IM_MODULE' => 'xim'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'ru_RU.UTF-8'
+    'XAUTHORITY' => '/home/egishe/.Xauthority'
+    'LC_NAME' => 'ru_RU.UTF-8'
+    '_' => './yii'
+    'OLDPWD' => '/var/www/egishe/web-consult'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1520515233.9543
+    'REQUEST_TIME' => 1520515233
+    'argv' => [
+        0 => './yii'
+    ]
+    'argc' => 1
+]
+2018-03-08 13:21:11 [-][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'console\commands\TestDataController' in file: /var/www/egishe/web-consult/basic/console/commands/TestDataController.php. Namespace missing? in /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('console\\command...')
+#1 [internal function]: spl_autoload_call('console\\command...')
+#2 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/HelpController.php(284): class_exists('console\\command...')
+#3 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/HelpController.php(262): yii\console\controllers\HelpController->validateControllerClass('console\\command...')
+#4 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/HelpController.php(179): yii\console\controllers\HelpController->getModuleCommands(Object(yii\console\Application))
+#5 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/HelpController.php(191): yii\console\controllers\HelpController->getCommands()
+#6 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/HelpController.php(297): yii\console\controllers\HelpController->getCommandDescriptions()
+#7 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/HelpController.php(67): yii\console\controllers\HelpController->getDefaultHelp()
+#8 [internal function]: yii\console\controllers\HelpController->actionIndex(NULL)
+#9 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#12 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#13 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('', Array)
+#14 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('', Array)
+#15 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /var/www/egishe/web-consult/basic/yii(20): yii\base\Application->run()
+#17 {main}
+2018-03-08 13:21:11 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LC_PAPER' => 'ru_RU.UTF-8'
+    'XDG_VTNR' => '8'
+    'LC_ADDRESS' => 'ru_RU.UTF-8'
+    'SSH_AGENT_PID' => '3618'
+    'XDG_SESSION_ID' => 'c1'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'LC_MONETARY' => 'ru_RU.UTF-8'
+    'QT_STYLE_OVERRIDE' => 'gtk'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '4205'
+    'XDG_SESSION_COOKIE' => '2a5d5f96ef9147c0b35535562b32d0ff-1520011373.792689-238922250'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'ru_RU.UTF-8'
+    'WINDOWID' => '81791394'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'USER' => 'egishe'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'QT_ACCESSIBILITY' => '1'
+    'LC_TELEPHONE' => 'ru_RU.UTF-8'
+    'INSIDE_NEMO_PYTHON' => ''
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SESSION_MANAGER' => 'local/egishe-GP62-2QE:@/tmp/.ICE-unix/3451,unix/egishe-GP62-2QE:/tmp/.ICE-unix/3451'
+    'DEFAULTS_PATH' => '/usr/share/gconf/cinnamon.default.path'
+    'USERNAME' => 'egishe'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'LC_IDENTIFICATION' => 'ru_RU.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/var/www/egishe/web-consult/basic'
+    'XMODIFIERS' => '@im=none'
+    'LANG' => 'ru_RU.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/cinnamon.mandatory.path'
+    'LC_MEASUREMENT' => 'ru_RU.UTF-8'
+    'PAPERSIZE' => 'a4'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'cinnamon'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/home/egishe'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'egishe'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'QT4_IM_MODULE' => 'xim'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-xeEd9eNSv0,guid=48223459e1fc4025ab6279025a99886e'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'MDMSESSION' => 'cinnamon'
+    'WINDOWPATH' => '8'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'ru_RU.UTF-8'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'GTK_IM_MODULE' => 'xim'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'ru_RU.UTF-8'
+    'XAUTHORITY' => '/home/egishe/.Xauthority'
+    'LC_NAME' => 'ru_RU.UTF-8'
+    '_' => './yii'
+    'OLDPWD' => '/var/www/egishe/web-consult'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1520515271.6423
+    'REQUEST_TIME' => 1520515271
+    'argv' => [
+        0 => './yii'
+    ]
+    'argc' => 1
+]
+2018-03-08 14:27:42 [-][-][-][error][yii\console\Exception] yii\console\Exception: Languages cannot be empty. in /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/MessageController.php:921
+Stack trace:
+#0 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig(NULL)
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract(NULL)
+#2 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/egishe/web-consult/basic/yii(20): yii\base\Application->run()
+#10 {main}
+2018-03-08 14:27:42 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LC_PAPER' => 'ru_RU.UTF-8'
+    'XDG_VTNR' => '8'
+    'LC_ADDRESS' => 'ru_RU.UTF-8'
+    'SSH_AGENT_PID' => '3618'
+    'XDG_SESSION_ID' => 'c1'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'LC_MONETARY' => 'ru_RU.UTF-8'
+    'QT_STYLE_OVERRIDE' => 'gtk'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '4205'
+    'XDG_SESSION_COOKIE' => '2a5d5f96ef9147c0b35535562b32d0ff-1520011373.792689-238922250'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'ru_RU.UTF-8'
+    'WINDOWID' => '81791394'
+    'OLDPWD' => '/var/www/egishe/web-consult/basic/common'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'USER' => 'egishe'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'QT_ACCESSIBILITY' => '1'
+    'LC_TELEPHONE' => 'ru_RU.UTF-8'
+    'INSIDE_NEMO_PYTHON' => ''
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SESSION_MANAGER' => 'local/egishe-GP62-2QE:@/tmp/.ICE-unix/3451,unix/egishe-GP62-2QE:/tmp/.ICE-unix/3451'
+    'DEFAULTS_PATH' => '/usr/share/gconf/cinnamon.default.path'
+    'USERNAME' => 'egishe'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'LC_IDENTIFICATION' => 'ru_RU.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/var/www/egishe/web-consult/basic'
+    'XMODIFIERS' => '@im=none'
+    'LANG' => 'ru_RU.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/cinnamon.mandatory.path'
+    'LC_MEASUREMENT' => 'ru_RU.UTF-8'
+    'PAPERSIZE' => 'a4'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'cinnamon'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/home/egishe'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'egishe'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'QT4_IM_MODULE' => 'xim'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-xeEd9eNSv0,guid=48223459e1fc4025ab6279025a99886e'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'MDMSESSION' => 'cinnamon'
+    'WINDOWPATH' => '8'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'ru_RU.UTF-8'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'GTK_IM_MODULE' => 'xim'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'ru_RU.UTF-8'
+    'XAUTHORITY' => '/home/egishe/.Xauthority'
+    'LC_NAME' => 'ru_RU.UTF-8'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1520519262.4391
+    'REQUEST_TIME' => 1520519262
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+    ]
+    'argc' => 2
+]
+2018-03-08 14:35:44 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request: message/extract-message in /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract-message', Array)
+#1 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract-message', Array)
+#2 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract...', Array)
+#3 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract...', Array)
+#4 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#5 /var/www/egishe/web-consult/basic/yii(20): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "message/extract-message". in /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract...', Array)
+#1 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/egishe/web-consult/basic/yii(20): yii\base\Application->run()
+#3 {main}
+2018-03-08 14:35:44 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LC_PAPER' => 'ru_RU.UTF-8'
+    'XDG_VTNR' => '8'
+    'LC_ADDRESS' => 'ru_RU.UTF-8'
+    'SSH_AGENT_PID' => '3618'
+    'XDG_SESSION_ID' => 'c1'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'LC_MONETARY' => 'ru_RU.UTF-8'
+    'QT_STYLE_OVERRIDE' => 'gtk'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '4205'
+    'XDG_SESSION_COOKIE' => '2a5d5f96ef9147c0b35535562b32d0ff-1520011373.792689-238922250'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'ru_RU.UTF-8'
+    'WINDOWID' => '81791394'
+    'OLDPWD' => '/var/www/egishe/web-consult/basic/common'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'USER' => 'egishe'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'QT_ACCESSIBILITY' => '1'
+    'LC_TELEPHONE' => 'ru_RU.UTF-8'
+    'INSIDE_NEMO_PYTHON' => ''
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SESSION_MANAGER' => 'local/egishe-GP62-2QE:@/tmp/.ICE-unix/3451,unix/egishe-GP62-2QE:/tmp/.ICE-unix/3451'
+    'DEFAULTS_PATH' => '/usr/share/gconf/cinnamon.default.path'
+    'USERNAME' => 'egishe'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'LC_IDENTIFICATION' => 'ru_RU.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/var/www/egishe/web-consult/basic'
+    'XMODIFIERS' => '@im=none'
+    'LANG' => 'ru_RU.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/cinnamon.mandatory.path'
+    'LC_MEASUREMENT' => 'ru_RU.UTF-8'
+    'PAPERSIZE' => 'a4'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'cinnamon'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/home/egishe'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'egishe'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'QT4_IM_MODULE' => 'xim'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-xeEd9eNSv0,guid=48223459e1fc4025ab6279025a99886e'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'MDMSESSION' => 'cinnamon'
+    'WINDOWPATH' => '8'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'ru_RU.UTF-8'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'GTK_IM_MODULE' => 'xim'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'ru_RU.UTF-8'
+    'XAUTHORITY' => '/home/egishe/.Xauthority'
+    'LC_NAME' => 'ru_RU.UTF-8'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1520519744.1414
+    'REQUEST_TIME' => 1520519744
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract-message'
+        2 => '@common/config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-03-08 14:36:05 [-][-][-][error][yii\console\Exception] yii\console\Exception: The configuration file does not exist: /var/www/egishe/web-consult/basic/common/config/i18n.php in /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/MessageController.php:890
+Stack trace:
+#0 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('/var/www/egishe...')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('@common/config/...')
+#2 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/egishe/web-consult/basic/yii(20): yii\base\Application->run()
+#10 {main}
+2018-03-08 14:36:05 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LC_PAPER' => 'ru_RU.UTF-8'
+    'XDG_VTNR' => '8'
+    'LC_ADDRESS' => 'ru_RU.UTF-8'
+    'SSH_AGENT_PID' => '3618'
+    'XDG_SESSION_ID' => 'c1'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'LC_MONETARY' => 'ru_RU.UTF-8'
+    'QT_STYLE_OVERRIDE' => 'gtk'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '4205'
+    'XDG_SESSION_COOKIE' => '2a5d5f96ef9147c0b35535562b32d0ff-1520011373.792689-238922250'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'ru_RU.UTF-8'
+    'WINDOWID' => '81791394'
+    'OLDPWD' => '/var/www/egishe/web-consult/basic/common'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'USER' => 'egishe'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'QT_ACCESSIBILITY' => '1'
+    'LC_TELEPHONE' => 'ru_RU.UTF-8'
+    'INSIDE_NEMO_PYTHON' => ''
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SESSION_MANAGER' => 'local/egishe-GP62-2QE:@/tmp/.ICE-unix/3451,unix/egishe-GP62-2QE:/tmp/.ICE-unix/3451'
+    'DEFAULTS_PATH' => '/usr/share/gconf/cinnamon.default.path'
+    'USERNAME' => 'egishe'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'LC_IDENTIFICATION' => 'ru_RU.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/var/www/egishe/web-consult/basic'
+    'XMODIFIERS' => '@im=none'
+    'LANG' => 'ru_RU.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/cinnamon.mandatory.path'
+    'LC_MEASUREMENT' => 'ru_RU.UTF-8'
+    'PAPERSIZE' => 'a4'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'cinnamon'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/home/egishe'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'egishe'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'QT4_IM_MODULE' => 'xim'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-xeEd9eNSv0,guid=48223459e1fc4025ab6279025a99886e'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'MDMSESSION' => 'cinnamon'
+    'WINDOWPATH' => '8'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'ru_RU.UTF-8'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'GTK_IM_MODULE' => 'xim'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'ru_RU.UTF-8'
+    'XAUTHORITY' => '/home/egishe/.Xauthority'
+    'LC_NAME' => 'ru_RU.UTF-8'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1520519765.3396
+    'REQUEST_TIME' => 1520519765
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => '@common/config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-03-08 14:36:25 [-][-][-][error][yii\console\Exception] yii\console\Exception: The configuration file does not exist: common/config/i18n.php in /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/MessageController.php:890
+Stack trace:
+#0 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('common/config/i...')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('common/config/i...')
+#2 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/egishe/web-consult/basic/yii(20): yii\base\Application->run()
+#10 {main}
+2018-03-08 14:36:25 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LC_PAPER' => 'ru_RU.UTF-8'
+    'XDG_VTNR' => '8'
+    'LC_ADDRESS' => 'ru_RU.UTF-8'
+    'SSH_AGENT_PID' => '3618'
+    'XDG_SESSION_ID' => 'c1'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'LC_MONETARY' => 'ru_RU.UTF-8'
+    'QT_STYLE_OVERRIDE' => 'gtk'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '4205'
+    'XDG_SESSION_COOKIE' => '2a5d5f96ef9147c0b35535562b32d0ff-1520011373.792689-238922250'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'ru_RU.UTF-8'
+    'WINDOWID' => '81791394'
+    'OLDPWD' => '/var/www/egishe/web-consult/basic/common'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'USER' => 'egishe'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'QT_ACCESSIBILITY' => '1'
+    'LC_TELEPHONE' => 'ru_RU.UTF-8'
+    'INSIDE_NEMO_PYTHON' => ''
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SESSION_MANAGER' => 'local/egishe-GP62-2QE:@/tmp/.ICE-unix/3451,unix/egishe-GP62-2QE:/tmp/.ICE-unix/3451'
+    'DEFAULTS_PATH' => '/usr/share/gconf/cinnamon.default.path'
+    'USERNAME' => 'egishe'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'LC_IDENTIFICATION' => 'ru_RU.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/var/www/egishe/web-consult/basic'
+    'XMODIFIERS' => '@im=none'
+    'LANG' => 'ru_RU.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/cinnamon.mandatory.path'
+    'LC_MEASUREMENT' => 'ru_RU.UTF-8'
+    'PAPERSIZE' => 'a4'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'cinnamon'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/home/egishe'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'egishe'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'QT4_IM_MODULE' => 'xim'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-xeEd9eNSv0,guid=48223459e1fc4025ab6279025a99886e'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'MDMSESSION' => 'cinnamon'
+    'WINDOWPATH' => '8'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'ru_RU.UTF-8'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'GTK_IM_MODULE' => 'xim'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'ru_RU.UTF-8'
+    'XAUTHORITY' => '/home/egishe/.Xauthority'
+    'LC_NAME' => 'ru_RU.UTF-8'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1520519785.3368
+    'REQUEST_TIME' => 1520519785
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => 'common/config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-03-08 14:36:35 [-][-][-][error][yii\console\Exception] yii\console\Exception: The configuration file does not exist: ./common/config/i18n.php in /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/MessageController.php:890
+Stack trace:
+#0 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/controllers/MessageController.php(296): yii\console\controllers\MessageController->initConfig('./common/config...')
+#1 [internal function]: yii\console\controllers\MessageController->actionExtract('./common/config...')
+#2 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('extract', Array)
+#5 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('extract', Array)
+#6 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('message/extract', Array)
+#7 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('message/extract', Array)
+#8 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/egishe/web-consult/basic/yii(20): yii\base\Application->run()
+#10 {main}
+2018-03-08 14:36:35 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LC_PAPER' => 'ru_RU.UTF-8'
+    'XDG_VTNR' => '8'
+    'LC_ADDRESS' => 'ru_RU.UTF-8'
+    'SSH_AGENT_PID' => '3618'
+    'XDG_SESSION_ID' => 'c1'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'LC_MONETARY' => 'ru_RU.UTF-8'
+    'QT_STYLE_OVERRIDE' => 'gtk'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '4205'
+    'XDG_SESSION_COOKIE' => '2a5d5f96ef9147c0b35535562b32d0ff-1520011373.792689-238922250'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'ru_RU.UTF-8'
+    'WINDOWID' => '81791394'
+    'OLDPWD' => '/var/www/egishe/web-consult/basic/common'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'USER' => 'egishe'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'QT_ACCESSIBILITY' => '1'
+    'LC_TELEPHONE' => 'ru_RU.UTF-8'
+    'INSIDE_NEMO_PYTHON' => ''
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SESSION_MANAGER' => 'local/egishe-GP62-2QE:@/tmp/.ICE-unix/3451,unix/egishe-GP62-2QE:/tmp/.ICE-unix/3451'
+    'DEFAULTS_PATH' => '/usr/share/gconf/cinnamon.default.path'
+    'USERNAME' => 'egishe'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'LC_IDENTIFICATION' => 'ru_RU.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/var/www/egishe/web-consult/basic'
+    'XMODIFIERS' => '@im=none'
+    'LANG' => 'ru_RU.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/cinnamon.mandatory.path'
+    'LC_MEASUREMENT' => 'ru_RU.UTF-8'
+    'PAPERSIZE' => 'a4'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'cinnamon'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/home/egishe'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'egishe'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'QT4_IM_MODULE' => 'xim'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-xeEd9eNSv0,guid=48223459e1fc4025ab6279025a99886e'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'MDMSESSION' => 'cinnamon'
+    'WINDOWPATH' => '8'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'ru_RU.UTF-8'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'GTK_IM_MODULE' => 'xim'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'ru_RU.UTF-8'
+    'XAUTHORITY' => '/home/egishe/.Xauthority'
+    'LC_NAME' => 'ru_RU.UTF-8'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1520519795.7899
+    'REQUEST_TIME' => 1520519795
+    'argv' => [
+        0 => './yii'
+        1 => 'message/extract'
+        2 => './common/config/i18n.php'
+    ]
+    'argc' => 3
+]
+2018-03-08 22:13:29 [-][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Generators may only declare a return type of Generator, Iterator, Traversable, or iterable, array is not permitted in /var/www/egishe/web-consult/basic/console/commands/TestDataController.php:98
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-08 22:13:29 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LC_PAPER' => 'ru_RU.UTF-8'
+    'XDG_VTNR' => '8'
+    'LC_ADDRESS' => 'ru_RU.UTF-8'
+    'SSH_AGENT_PID' => '3618'
+    'XDG_SESSION_ID' => 'c1'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'LC_MONETARY' => 'ru_RU.UTF-8'
+    'QT_STYLE_OVERRIDE' => 'gtk'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '4205'
+    'XDG_SESSION_COOKIE' => '2a5d5f96ef9147c0b35535562b32d0ff-1520011373.792689-238922250'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'ru_RU.UTF-8'
+    'WINDOWID' => '81791394'
+    'OLDPWD' => '/var/www/egishe/web-consult/basic/common'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'USER' => 'egishe'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'QT_ACCESSIBILITY' => '1'
+    'LC_TELEPHONE' => 'ru_RU.UTF-8'
+    'INSIDE_NEMO_PYTHON' => ''
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SESSION_MANAGER' => 'local/egishe-GP62-2QE:@/tmp/.ICE-unix/3451,unix/egishe-GP62-2QE:/tmp/.ICE-unix/3451'
+    'DEFAULTS_PATH' => '/usr/share/gconf/cinnamon.default.path'
+    'USERNAME' => 'egishe'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'LC_IDENTIFICATION' => 'ru_RU.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/var/www/egishe/web-consult/basic'
+    'XMODIFIERS' => '@im=none'
+    'LANG' => 'ru_RU.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/cinnamon.mandatory.path'
+    'LC_MEASUREMENT' => 'ru_RU.UTF-8'
+    'PAPERSIZE' => 'a4'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'cinnamon'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/home/egishe'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'egishe'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'QT4_IM_MODULE' => 'xim'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-xeEd9eNSv0,guid=48223459e1fc4025ab6279025a99886e'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'MDMSESSION' => 'cinnamon'
+    'WINDOWPATH' => '8'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'ru_RU.UTF-8'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'GTK_IM_MODULE' => 'xim'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'ru_RU.UTF-8'
+    'XAUTHORITY' => '/home/egishe/.Xauthority'
+    'LC_NAME' => 'ru_RU.UTF-8'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1520547208.9439
+    'REQUEST_TIME' => 1520547208
+    'argv' => [
+        0 => './yii'
+        1 => 'test-data/test'
+    ]
+    'argc' => 2
+]
+2018-03-08 22:14:02 [-][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Generators may only declare a return type of Generator, Iterator, Traversable, or iterable, console\commands\Generator is not permitted in /var/www/egishe/web-consult/basic/console/commands/TestDataController.php:98
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-08 22:14:02 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LC_PAPER' => 'ru_RU.UTF-8'
+    'XDG_VTNR' => '8'
+    'LC_ADDRESS' => 'ru_RU.UTF-8'
+    'SSH_AGENT_PID' => '3618'
+    'XDG_SESSION_ID' => 'c1'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'LC_MONETARY' => 'ru_RU.UTF-8'
+    'QT_STYLE_OVERRIDE' => 'gtk'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '4205'
+    'XDG_SESSION_COOKIE' => '2a5d5f96ef9147c0b35535562b32d0ff-1520011373.792689-238922250'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'ru_RU.UTF-8'
+    'WINDOWID' => '81791394'
+    'OLDPWD' => '/var/www/egishe/web-consult/basic/common'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'USER' => 'egishe'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'QT_ACCESSIBILITY' => '1'
+    'LC_TELEPHONE' => 'ru_RU.UTF-8'
+    'INSIDE_NEMO_PYTHON' => ''
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SESSION_MANAGER' => 'local/egishe-GP62-2QE:@/tmp/.ICE-unix/3451,unix/egishe-GP62-2QE:/tmp/.ICE-unix/3451'
+    'DEFAULTS_PATH' => '/usr/share/gconf/cinnamon.default.path'
+    'USERNAME' => 'egishe'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'LC_IDENTIFICATION' => 'ru_RU.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/var/www/egishe/web-consult/basic'
+    'XMODIFIERS' => '@im=none'
+    'LANG' => 'ru_RU.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/cinnamon.mandatory.path'
+    'LC_MEASUREMENT' => 'ru_RU.UTF-8'
+    'PAPERSIZE' => 'a4'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'cinnamon'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/home/egishe'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'egishe'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'QT4_IM_MODULE' => 'xim'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-xeEd9eNSv0,guid=48223459e1fc4025ab6279025a99886e'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'MDMSESSION' => 'cinnamon'
+    'WINDOWPATH' => '8'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'ru_RU.UTF-8'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'GTK_IM_MODULE' => 'xim'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'ru_RU.UTF-8'
+    'XAUTHORITY' => '/home/egishe/.Xauthority'
+    'LC_NAME' => 'ru_RU.UTF-8'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1520547242.7047
+    'REQUEST_TIME' => 1520547242
+    'argv' => [
+        0 => './yii'
+        1 => 'test-data/test'
+    ]
+    'argc' => 2
+]
+2018-03-08 22:14:10 [-][-][-][error][TypeError] TypeError: Argument 1 passed to console\commands\TestDataController::generateRequestData() must be an instance of console\commands\integer, integer given, called in /var/www/egishe/web-consult/basic/console/commands/TestDataController.php on line 16 and defined in /var/www/egishe/web-consult/basic/console/commands/TestDataController.php:98
+Stack trace:
+#0 /var/www/egishe/web-consult/basic/console/commands/TestDataController.php(16): console\commands\TestDataController->generateRequestData(1, Array)
+#1 [internal function]: console\commands\TestDataController->actionTest()
+#2 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('test', Array)
+#5 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('test', Array)
+#6 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('test-data/test', Array)
+#7 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('test-data/test', Array)
+#8 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/egishe/web-consult/basic/yii(20): yii\base\Application->run()
+#10 {main}
+2018-03-08 22:14:10 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LC_PAPER' => 'ru_RU.UTF-8'
+    'XDG_VTNR' => '8'
+    'LC_ADDRESS' => 'ru_RU.UTF-8'
+    'SSH_AGENT_PID' => '3618'
+    'XDG_SESSION_ID' => 'c1'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'LC_MONETARY' => 'ru_RU.UTF-8'
+    'QT_STYLE_OVERRIDE' => 'gtk'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '4205'
+    'XDG_SESSION_COOKIE' => '2a5d5f96ef9147c0b35535562b32d0ff-1520011373.792689-238922250'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'ru_RU.UTF-8'
+    'WINDOWID' => '81791394'
+    'OLDPWD' => '/var/www/egishe/web-consult/basic/common'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'USER' => 'egishe'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'QT_ACCESSIBILITY' => '1'
+    'LC_TELEPHONE' => 'ru_RU.UTF-8'
+    'INSIDE_NEMO_PYTHON' => ''
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SESSION_MANAGER' => 'local/egishe-GP62-2QE:@/tmp/.ICE-unix/3451,unix/egishe-GP62-2QE:/tmp/.ICE-unix/3451'
+    'DEFAULTS_PATH' => '/usr/share/gconf/cinnamon.default.path'
+    'USERNAME' => 'egishe'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'LC_IDENTIFICATION' => 'ru_RU.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/var/www/egishe/web-consult/basic'
+    'XMODIFIERS' => '@im=none'
+    'LANG' => 'ru_RU.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/cinnamon.mandatory.path'
+    'LC_MEASUREMENT' => 'ru_RU.UTF-8'
+    'PAPERSIZE' => 'a4'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'cinnamon'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/home/egishe'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'egishe'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'QT4_IM_MODULE' => 'xim'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-xeEd9eNSv0,guid=48223459e1fc4025ab6279025a99886e'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'MDMSESSION' => 'cinnamon'
+    'WINDOWPATH' => '8'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'ru_RU.UTF-8'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'GTK_IM_MODULE' => 'xim'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'ru_RU.UTF-8'
+    'XAUTHORITY' => '/home/egishe/.Xauthority'
+    'LC_NAME' => 'ru_RU.UTF-8'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1520547250.336
+    'REQUEST_TIME' => 1520547250
+    'argv' => [
+        0 => './yii'
+        1 => 'test-data/test'
+    ]
+    'argc' => 2
+]
+2018-03-08 22:32:50 [-][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Array to string conversion in /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/db/QueryBuilder.php:461
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'Array to string...', '/var/www/egishe...', 461, Array)
+#1 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/db/QueryBuilder.php(461): implode(', ', Array)
+#2 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/db/Command.php(504): yii\db\QueryBuilder->batchInsert('request', Array, Array, Array)
+#3 /var/www/egishe/web-consult/basic/console/commands/TestDataController.php(33): yii\db\Command->batchInsert('request', Array, Array)
+#4 /var/www/egishe/web-consult/basic/console/commands/TestDataController.php(16): console\commands\TestDataController->createManagerWithRequest()
+#5 [internal function]: console\commands\TestDataController->actionCreate()
+#6 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('create', Array)
+#9 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('create', Array)
+#10 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('test-data/creat...', Array)
+#11 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('test-data/creat...', Array)
+#12 /var/www/egishe/web-consult/basic/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /var/www/egishe/web-consult/basic/yii(20): yii\base\Application->run()
+#14 {main}
+2018-03-08 22:32:50 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'LC_PAPER' => 'ru_RU.UTF-8'
+    'XDG_VTNR' => '8'
+    'LC_ADDRESS' => 'ru_RU.UTF-8'
+    'SSH_AGENT_PID' => '3618'
+    'XDG_SESSION_ID' => 'c1'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'LC_MONETARY' => 'ru_RU.UTF-8'
+    'QT_STYLE_OVERRIDE' => 'gtk'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '4205'
+    'XDG_SESSION_COOKIE' => '2a5d5f96ef9147c0b35535562b32d0ff-1520011373.792689-238922250'
+    'QT_LINUX_ACCESSIBILITY_ALWAYS_ON' => '1'
+    'LC_NUMERIC' => 'ru_RU.UTF-8'
+    'WINDOWID' => '81791394'
+    'OLDPWD' => '/var/www/egishe/web-consult/basic/common'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'USER' => 'egishe'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'QT_ACCESSIBILITY' => '1'
+    'LC_TELEPHONE' => 'ru_RU.UTF-8'
+    'INSIDE_NEMO_PYTHON' => ''
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SESSION_MANAGER' => 'local/egishe-GP62-2QE:@/tmp/.ICE-unix/3451,unix/egishe-GP62-2QE:/tmp/.ICE-unix/3451'
+    'DEFAULTS_PATH' => '/usr/share/gconf/cinnamon.default.path'
+    'USERNAME' => 'egishe'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'LC_IDENTIFICATION' => 'ru_RU.UTF-8'
+    'GDM_XSERVER_LOCATION' => 'local'
+    'PWD' => '/var/www/egishe/web-consult/basic'
+    'XMODIFIERS' => '@im=none'
+    'LANG' => 'ru_RU.UTF-8'
+    'MANDATORY_PATH' => '/usr/share/gconf/cinnamon.mandatory.path'
+    'LC_MEASUREMENT' => 'ru_RU.UTF-8'
+    'PAPERSIZE' => 'a4'
+    'MDM_XSERVER_LOCATION' => 'local'
+    'GDMSESSION' => 'cinnamon'
+    'SHLVL' => '1'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/home/egishe'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'egishe'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/usr/local/share/:/usr/share/:/usr/share/mdm/'
+    'QT4_IM_MODULE' => 'xim'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-xeEd9eNSv0,guid=48223459e1fc4025ab6279025a99886e'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'MDMSESSION' => 'cinnamon'
+    'WINDOWPATH' => '8'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0'
+    'MDM_LANG' => 'ru_RU.UTF-8'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'GTK_IM_MODULE' => 'xim'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'LC_TIME' => 'ru_RU.UTF-8'
+    'XAUTHORITY' => '/home/egishe/.Xauthority'
+    'LC_NAME' => 'ru_RU.UTF-8'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1520548370.4931
+    'REQUEST_TIME' => 1520548370
+    'argv' => [
+        0 => './yii'
+        1 => 'test-data/create'
+    ]
+    'argc' => 2
+]
